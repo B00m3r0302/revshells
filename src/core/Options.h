@@ -12,18 +12,41 @@
  * like stager stages, encryption flags, etc. without touching existing payloads
  */
 
+enum class PayloadType {
+  REVERSE,
+  BIND,
+  MSFVENOM,
+  HOAXSHELL
+};
+
+enum class Platform {
+  LINUX,
+  WINDOWS,
+  MAC
+};
+
+enum class Encoding {
+  NONE,
+  URL,
+  DOUBLE_URL,
+  BASE64
+};
+
 struct Options {
   std::string host;
   int port;
 
-  // New field: which listener tool to use
-  // e.g. "nc", "socat", "ncat_tls", etc.
+  // Payload configuration
+  PayloadType payloadType = PayloadType::REVERSE;
+  Platform platform = Platform::LINUX;
+  Encoding encoding = Encoding::NONE;
+
+  // Listener configuration
   std::string listenerType;
 
-  // Which shell interpreter to invoke on the target.
-  // e.g. "bash", "sh", "zsh", "bin/sh", etc.
+  // Shell interpreter
   std::string interpreter;
 
-  // e.g. {"base64", true}, {"stager", false}
+  // Additional flags
   std::map<std::string, bool> flags;
 };

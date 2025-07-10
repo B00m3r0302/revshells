@@ -2,8 +2,8 @@
 
 #pragma once
 
-#include "InterfacePayload.h"
-#include "Options.h"
+#include "../../core/InterfacePayload.h"
+#include "../../core/Options.h"
 #include <string>
 /**
  * BashIPayload implements IPayload for generic Bourne-style shells.

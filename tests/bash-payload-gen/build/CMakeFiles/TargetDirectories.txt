@@ -1,3 +1,0 @@
-/home/kali/revshells/tests/bash-payload-gen/build/CMakeFiles/bash-payload-gen.dir
-/home/kali/revshells/tests/bash-payload-gen/build/CMakeFiles/edit_cache.dir
-/home/kali/revshells/tests/bash-payload-gen/build/CMakeFiles/rebuild_cache.dir

@@ -1,5 +1,20 @@
 #include "PayloadFactory.h"
 #include "../listeners/ListenerFactory.h"
+#include "implementations/Bash_I_Payload.h"
+#include "implementations/Bash_196_Payload.h"
+#include "implementations/Bash_RL_Payload.h"
+#include "implementations/Bash_5_Payload.h"
+#include "implementations/Nc_Mkfifo_Payload.h"
+#include "implementations/Nc_E_Payload.h"
+#include "implementations/Nc_Exe_Payload.h"
+#include "implementations/Busybox_Nc_Payload.h"
+#include "implementations/Nc_C_Payload.h"
+#include "implementations/Ncat_E_Payload.h" 
+#include "implementations/Ncat_Exe_E_Payload.h"
+#include "implementations/Ncat_UDP_Payload.h"
+#include "implementations/Curl_Payload.h"
+#include "implementations/Rustcat_Payload.h"
+#include "implementations/C_Payload.h"
 #include <sstream>
 #include <iomanip>
 #include <algorithm>
@@ -11,6 +26,21 @@ PayloadFactory::PayloadFactory() {
     // registry_["zsh"] = std::make_unique<ZshPayload>();
     // registry_["powershell"] = std::make_unique<PowershellPayload>();
     // etc.
+    registry_["bash_i"] = std::make_unique<BashIPayload>();
+    registry_["bash_196"] = std::make_unique<Bash196Payload>();
+    registry_["bash_rl"] = std::make_unique<BashRLPayload>();
+    registry_["bash_5"] = std::make_unique<Bash5Payload>();
+    registry_["nc_mkfifo"] = std::make_unique<NcMkfifoPayload>();
+    registry_["nc_e"] = std::make_unique<NcEPayload>();
+    registry_["nc_exe"] = std::make_unique<NcExePayload>();
+    registry_["busybox_nc"] = std::make_unique<BusyboxNcPayload>();
+    registry_["nc_c"] = std::make_unique<NcCPayload>();
+    registry_["ncat_e"] = std::make_unique<NcatEPayload>();
+    registry_["ncat_exe_e"] = std::make_unique<NcatExeEPayload>();
+    registry_["ncat_udp"] = std::make_unique<NcatUDPPayload>();
+    registry_["curl"] = std::make_unique<CurlPayload>();
+    registry_["rustcat"] = std::make_unique<RustcatPayload>();
+    registry_["c"] = std::make_unique<CPayload>();
 }
 
 std::vector<std::string> PayloadFactory::available() const {
@@ -155,7 +185,7 @@ std::string PayloadFactory::doubleUrlEncode(const std::string& input) const {
 }
 
 std::vector<std::string> PayloadFactory::getSupportedShells() const {
-    return {"bash", "sh", "zsh", "/bin/sh", "/bin/bash", "dash", "ksh"};
+    return {"sh", "/bin/sh", "bash", "/bin/bash", "cmd", "powershell", "pwsh", "ash", "bsh", "csh", "ksh", "zsh", "pdksh", "tcsh", "mksh", "dash"};
 }
 
 std::vector<std::string> PayloadFactory::getSupportedEncodings() const {

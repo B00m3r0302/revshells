@@ -1,0 +1,68 @@
+{
+	// Place your revshells workspace snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"scope": "javascript,typescript",
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+
+	"Payload Class Template": {
+		"prefix": "payloadclass",
+		"body": [
+			"#pragma once",
+			"",
+			"#include \"../../core/InterfacePayload.h\"",
+			"#include \"../../core/Options.h\"",
+			"#include <string>",
+			"",
+			"class ${1:ClassName} : public IPayload {",
+			"public:",
+    		"	std::string name() const override;",
+    		"	std::string generate(const Options& opts) const override;",
+    		"	std::string listener(const Options& opts) const override;",
+			"};",
+		],
+		"description": "Template for the .h file for a new payload creation only requiring the user to provide the ClassName to streamline development."
+	},
+
+	"Payload Generation Template": {
+		"prefix": "payloadgen",
+		"body": [
+			"#include \"${1:FileName}.h\"",
+			"#include \"../../listeners/ListenerFactory.h\"",
+			"",
+			"std::string ${2:ClassName}::name() const {",
+    		"return \"${3:PayloadName}\";"
+			"}",
+			"",
+			"std::string ${2:ClassName}::generate(const Options& opts) const {",
+    		"	return ${4:PayloadCode};",
+			"}",
+			"",
+			"std::string ${2:ClassName}::listener(const Options& opts) const {",
+    		"	ListenerFactory factory;",
+			"    IListener* listener = factory.get(opts.listenerType);",
+    		"	return listener ? listener->command(opts) : \"nc -lvnp \" + std::to_string(opts.port);"
+			"}",
+		],
+		"description": "Template for the .cpp file for a new payload creation only requiring the user to provide the PayloadName and PayloadCode to streamline development."
+	},
+
+	"Register Payload": {
+		"prefix": "regpayload",
+		"body": [
+			"registry_[\"${1:PayloadName}\"] = std::make_unique<${2:ClassName}>();",
+		],
+		"description": "Template for registering a new payload in the PayloadFactory."
+	},
+}

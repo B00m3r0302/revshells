@@ -6,7 +6,7 @@
 #include <string>
 
 // Returns the logical name for this payload type, used in UIs or CLI flags
-std::string BashIPayload::name() const { return "shell"; }
+std::string BashIPayload::name() const { return "bash_i"; }
 
 // Generates a reverse-shell command invoking a chosen interpreter (bash, sh,
 // zsh, etc.)

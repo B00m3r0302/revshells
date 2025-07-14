@@ -22,6 +22,8 @@
 #include "implementations/OpenSSL_Payload.h" 
 #include "implementations/Perl_Payload.h"
 #include "implementations/Perl_No_Sh_Payload.h"
+#include "implementations/Perl_PentestMonkey_Payload.h"
+#include "implementations/PHP_PentestMonkey_Payload.h"
 #include <sstream>
 #include <iomanip>
 #include <algorithm>
@@ -55,6 +57,8 @@ PayloadFactory::PayloadFactory() {
     registry_["openssl"] = std::make_unique<OpenSSLPayload>();
     registry_["perl"] = std::make_unique<PerlPayload>();
     registry_["perl_no_sh"] = std::make_unique<PerlNoShPayload>();
+    registry_["perl_pentestmonkey"] = std::make_unique<PerlPentestMonkeyPayload>();
+    registry_["php_pentestmonkey"] = std::make_unique<PHPPentestMonkeyPayload>();
 }
 
 std::vector<std::string> PayloadFactory::available() const {

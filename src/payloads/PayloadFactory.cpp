@@ -15,6 +15,13 @@
 #include "implementations/Curl_Payload.h"
 #include "implementations/Rustcat_Payload.h"
 #include "implementations/C_Payload.h"
+#include "implementations/C_Windows_Payload.h"
+#include "implementations/C_Sharp_TCP_Client_Payload.h"
+#include "implementations/C_Sharp_Bash_I_Payload.h"
+#include "implementations/Haskell_Payload.h"   
+#include "implementations/OpenSSL_Payload.h" 
+#include "implementations/Perl_Payload.h"
+#include "implementations/Perl_No_Sh_Payload.h"
 #include <sstream>
 #include <iomanip>
 #include <algorithm>
@@ -41,6 +48,13 @@ PayloadFactory::PayloadFactory() {
     registry_["curl"] = std::make_unique<CurlPayload>();
     registry_["rustcat"] = std::make_unique<RustcatPayload>();
     registry_["c"] = std::make_unique<CPayload>();
+    registry_["c_windows"] = std::make_unique<CWindowsPayload>();
+    registry_["c_sharp_tcp_client"] = std::make_unique<CSharpTCPClientPayload>();
+    registry_["c_sharp_bash_i"] = std::make_unique<CSharpBashIPayload>();
+    registry_["haskell"] = std::make_unique<HaskellPayload>();
+    registry_["openssl"] = std::make_unique<OpenSSLPayload>();
+    registry_["perl"] = std::make_unique<PerlPayload>();
+    registry_["perl_no_sh"] = std::make_unique<PerlNoShPayload>();
 }
 
 std::vector<std::string> PayloadFactory::available() const {

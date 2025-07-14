@@ -31,7 +31,7 @@ std::string CPayload::generate(const Options& opts) const {
        << "     execvp(" + opts.interpreter + ", argv, NULL);\n\n"
        << "     return 0;\n"
        << "}\n";
-    return;
+    return ss.str();
 }
 
 std::string CPayload::listener(const Options& opts) const {

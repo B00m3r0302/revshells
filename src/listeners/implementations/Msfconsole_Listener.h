@@ -1,5 +1,5 @@
 #pragma once
-#include "InterfaceListener.h"
+#include "../../core/InterfaceListener.h"
 
 class Msfconsole : public IListener {
 public:

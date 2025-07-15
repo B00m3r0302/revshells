@@ -1,7 +1,7 @@
 // src/logic/NcListener.h
 
 #pragma once
-#include "InterfaceListener.h"
+#include "../../core/InterfaceListener.h"
 
 class NcListener : public IListener {
 public:

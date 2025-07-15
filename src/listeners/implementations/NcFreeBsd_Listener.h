@@ -1,7 +1,7 @@
 // src/logic/NcFreeBsd.h
 
 #pragma once
-#include "InterfaceListener.h"
+#include "../../core/InterfaceListener.h"
 
 class NcFreeBsd : public IListener {
 public:

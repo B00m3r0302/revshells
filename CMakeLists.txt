@@ -28,6 +28,29 @@ set(CORE_SOURCES
 set(PAYLOAD_SOURCES
     src/payloads/PayloadFactory.cpp
     src/payloads/implementations/Bash_I_Payload.cpp
+    src/payloads/implementations/Bash_196_Payload.cpp
+    src/payloads/implementations/Bash_RL_Payload.cpp
+    src/payloads/implementations/Bash_5_Payload.cpp
+    src/payloads/implementations/Nc_Mkfifo_Payload.cpp
+    src/payloads/implementations/Nc_E_Payload.cpp
+    src/payloads/implementations/Nc_Exe_Payload.cpp
+    src/payloads/implementations/Busybox_Nc_Payload.cpp
+    src/payloads/implementations/Nc_C_Payload.cpp
+    src/payloads/implementations/Ncat_E_Payload.cpp
+    src/payloads/implementations/Ncat_Exe_E_Payload.cpp
+    src/payloads/implementations/Ncat_UDP_Payload.cpp
+    src/payloads/implementations/Curl_Payload.cpp
+    src/payloads/implementations/Rustcat_Payload.cpp
+    src/payloads/implementations/C_Payload.cpp
+    src/payloads/implementations/C_Windows_Payload.cpp
+    src/payloads/implementations/C_Sharp_TCP_Client_Payload.cpp
+    src/payloads/implementations/C_Sharp_Bash_I_Payload.cpp
+    src/payloads/implementations/Haskell_Payload.cpp
+    src/payloads/implementations/OpenSSL_Payload.cpp
+    src/payloads/implementations/Perl_Payload.cpp
+    src/payloads/implementations/Perl_No_Sh_Payload.cpp
+    src/payloads/implementations/Perl_PentestMonkey_Payload.cpp
+    src/payloads/implementations/PHP_PentestMonkey_Payload.cpp
 )
 
 set(LISTENER_SOURCES

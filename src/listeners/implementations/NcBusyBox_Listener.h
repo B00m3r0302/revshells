@@ -1,7 +1,7 @@
 // src/logic/NcBusyBox.h
 
 #pragma once
-#include "InterfaceListener.h"
+#include "../../core/InterfaceListener.h"
 
 class NcBusyBox : public IListener {
 public:

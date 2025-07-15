@@ -1,7 +1,7 @@
 // src/logic/Ncat.h
 
 #pragma once
-#include "InterfaceListener.h"
+#include "../../core/InterfaceListener.h"
 
 class NcatListener : public IListener {
 public:

@@ -437,6 +437,28 @@ src/ui/CMakeFiles/revshells-gui.dir/mainwindow.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qstatusbar.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h \
+ /home/kali/Documents/revshells/src/ui/../payloads/PayloadFactory.h \
+ /home/kali/Documents/revshells/src/ui/../payloads/../core/InterfacePayload.h \
+ /home/kali/Documents/revshells/src/ui/../payloads/../core/Options.h \
+ /home/kali/Documents/revshells/src/ui/../listeners/ListenerFactory.h \
+ /home/kali/Documents/revshells/src/ui/../listeners/../core/InterfaceListener.h \
+ /home/kali/Documents/revshells/src/ui/../listeners/implementations/Hoaxshell_Listener.h \
+ /home/kali/Documents/revshells/src/ui/../listeners/implementations/Msfconsole_Listener.h \
+ /home/kali/Documents/revshells/src/ui/../listeners/implementations/NcBusyBox_Listener.h \
+ /home/kali/Documents/revshells/src/ui/../listeners/implementations/NcFreeBsd_Listener.h \
+ /home/kali/Documents/revshells/src/ui/../listeners/implementations/Nc_Listener.h \
+ /home/kali/Documents/revshells/src/ui/../listeners/implementations/NcatExe_Listener.h \
+ /home/kali/Documents/revshells/src/ui/../listeners/implementations/NcatTLS_Listener.h \
+ /home/kali/Documents/revshells/src/ui/../listeners/implementations/Ncat_Listener.h \
+ /home/kali/Documents/revshells/src/ui/../listeners/implementations/Openssl_Listener.h \
+ /home/kali/Documents/revshells/src/ui/../listeners/implementations/Powercat_Listener.h \
+ /home/kali/Documents/revshells/src/ui/../listeners/implementations/PwncatWindows_Listener.h \
+ /home/kali/Documents/revshells/src/ui/../listeners/implementations/Pwncat_Listener.h \
+ /home/kali/Documents/revshells/src/ui/../listeners/implementations/RlwrapNc_Listener.h \
+ /home/kali/Documents/revshells/src/ui/../listeners/implementations/Rustcat_Listener.h \
+ /home/kali/Documents/revshells/src/ui/../listeners/implementations/SocatTTY_Listener.h \
+ /home/kali/Documents/revshells/src/ui/../listeners/implementations/Socat_Listener.h \
+ /home/kali/Documents/revshells/src/ui/../listeners/implementations/WindowsConPty_Listener.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QGuiApplication \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qguiapplication.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QClipboard \
@@ -444,4 +466,45 @@ src/ui/CMakeFiles/revshells-gui.dir/mainwindow.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsDropShadowEffect \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgraphicseffect.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QUrl \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qurl.h
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qurl.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPushButton \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qpushbutton.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractbutton.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QLineEdit \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlineedit.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qframe.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextcursor.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextdocument.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextformat.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qpen.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextoption.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QSpinBox \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qspinbox.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractspinbox.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qvalidator.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qregularexpression.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QComboBox \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qcombobox.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractitemdelegate.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qstyleoption.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qslider.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractslider.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qstyle.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtabbar.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qrubberband.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qabstractitemmodel.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QTextEdit \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtextedit.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractscrollarea.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QVBoxLayout \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qboxlayout.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlayout.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlayoutitem.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qboxlayout.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgridlayout.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QHBoxLayout \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGridLayout \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgridlayout.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QLabel \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlabel.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qpicture.h

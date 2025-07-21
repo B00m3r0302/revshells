@@ -1,0 +1,6 @@
+set(__QT_DEPLOY_TARGET_revshells-payloads_FILE /home/kali/Documents/revshells/build/src/payloads/librevshells-payloads.a)
+set(__QT_DEPLOY_TARGET_revshells-payloads_TYPE STATIC_LIBRARY)
+set(__QT_DEPLOY_TARGET_revshells-cli_FILE /home/kali/Documents/revshells/build/src/app/revshells-cli)
+set(__QT_DEPLOY_TARGET_revshells-cli_TYPE EXECUTABLE)
+set(__QT_DEPLOY_TARGET_revshells-gui_FILE /home/kali/Documents/revshells/build/src/ui/revshells-gui)
+set(__QT_DEPLOY_TARGET_revshells-gui_TYPE EXECUTABLE)

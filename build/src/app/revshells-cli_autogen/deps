@@ -1,0 +1,4 @@
+revshells-cli_autogen/timestamp: \
+	/home/kali/Documents/revshells/src/app/CMakeLists.txt \
+	/home/kali/Documents/revshells/src/app/main.cpp \
+	/usr/bin/cmake

@@ -44,14 +44,14 @@ MainWindow::MainWindow(QWidget *parent)
             
         /*  Buttons with newo hover/focus */
         QPushButton {
-            backbround-color: rgba(142, 68, 173, 200);
+            background-color: rgba(142, 68, 173, 200);
             border: none;
             border-radius: 4px;
             padding: 6px 12px;
             color: #FFF;
             font-weight: bold;
         }
-        QPushBotton:hover {
+        QPushButton:hover {
             background-color: rgba(188, 77, 232, 220);
         }
         QPushButton:pressed {
@@ -115,7 +115,7 @@ void MainWindow::generateCommand()
     if (encoding == "base64") {
         cmd = cmd.toUtf8().toBase64();
     } else if (encoding == "url") {
-        cmd = QUrl"":toPercentEncoding(cmd);
+        cmd = QUrl::toPercentEncoding(cmd);
     } else if (encoding == "double_url") {
         cmd = QUrl::toPercentEncoding(
             QUrl::toPercentEncoding(cmd)

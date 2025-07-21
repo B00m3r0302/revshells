@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/i18n">
+    <file alias="../../revshells_en_US.qm">/home/kali/Documents/revshells/build/revshells_en_US.qm</file>
+  </qresource>
+</RCC>
+

@@ -85,15 +85,48 @@ target_link_libraries(revshells-gui PRIVATE
 
 ## Development Workflow
 
-### Qt Creator Integration
+### Two UI Development Approaches
+
+#### Option 1: Qt Creator + .ui Designer (Visual)
 - **Project Recognition**: Open root `CMakeLists.txt` in Qt Creator
 - **UI Designer**: Directly edit `mainwindow.ui` with visual designer
 - **Debugging**: Full Qt debugging support with object inspection
 - **Preview**: Live preview of UI changes during development
 
+#### Option 2: Programmatic UI Creation (Code-based)
+**Current Status**: Your `mainwindow.cpp` expects UI elements that aren't in the `.ui` file:
+- `ipLineEdit`, `portSpinBox`, `listenerComboBox`, `payloadComboBox`, `encodingComboBox`
+- `commandTextEdit`, `copyButton`, `centralWidget`
+
+**To implement programmatically:**
+
+1. **Replace .ui dependency**: Remove `#include "ui_mainwindow.h"` and `ui->` usage
+2. **Create widgets in constructor**: Use `new QLineEdit(this)`, `new QComboBox(this)`, etc.
+3. **Layout management**: Use `QVBoxLayout`, `QHBoxLayout`, `QGridLayout` for organization
+4. **Connect signals manually**: Replace `ui->element` with direct widget pointers
+5. **Styling approach**: Keep existing `qApp->setStyleSheet()` or apply per-widget
+
+**Key widgets needed:**
+```cpp
+// Input controls
+QLineEdit *ipLineEdit;
+QSpinBox *portSpinBox; 
+QComboBox *listenerComboBox, *payloadComboBox, *encodingComboBox;
+
+// Output and actions  
+QTextEdit *commandTextEdit;
+QPushButton *copyButton;
+QWidget *centralWidget;
+```
+
+**Layout structure to implement:**
+- Main layout with input section (IP, port, dropdowns)
+- Output section (command display + copy button)
+- Proper spacing and sizing policies
+
 ### Adding New UI Features
 
-1. **Update UI Layout**: Modify `mainwindow.ui` in Qt Designer
+1. **Update UI Layout**: Either modify `mainwindow.ui` in Qt Designer OR create widgets programmatically
 2. **Extend MainWindow**: Add new slots and signal handlers in `mainwindow.h/cpp`
 3. **Factory Integration**: Connect UI elements to payload/listener factories
 4. **Testing**: Test across different platforms and Qt themes

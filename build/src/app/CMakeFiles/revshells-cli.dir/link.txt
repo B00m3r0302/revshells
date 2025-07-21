@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/revshells-cli.dir/link.d "CMakeFiles/revshells-cli.dir/revshells-cli_autogen/mocs_compilation.cpp.o" "CMakeFiles/revshells-cli.dir/main.cpp.o" -o revshells-cli  -Wl,-rpath,:::::::::::::::::::::: ../payloads/librevshells-payloads.a

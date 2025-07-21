@@ -1,0 +1,371 @@
+{
+	"BUILD_DIR" : "/home/kali/Documents/revshells/build/src/payloads/revshells-payloads_autogen",
+	"CMAKE_BINARY_DIR" : "/home/kali/Documents/revshells/build",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/kali/Documents/revshells/build/src/payloads",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/kali/Documents/revshells/src/payloads",
+	"CMAKE_EXECUTABLE" : "/usr/bin/cmake",
+	"CMAKE_LIST_FILES" : [ "/home/kali/Documents/revshells/src/payloads/CMakeLists.txt" ],
+	"CMAKE_SOURCE_DIR" : "/home/kali/Documents/revshells",
+	"CROSS_CONFIG" : false,
+	"DEP_FILE" : "/home/kali/Documents/revshells/build/src/payloads/revshells-payloads_autogen/deps",
+	"DEP_FILE_RULE_NAME" : "revshells-payloads_autogen/timestamp",
+	"HEADERS" : 
+	[
+		[
+			"/home/kali/Documents/revshells/src/payloads/PayloadFactory.h",
+			"MU",
+			"EWIEGA46WW/moc_PayloadFactory.cpp",
+			null
+		],
+		[
+			"/home/kali/Documents/revshells/src/payloads/implementations/Bash_196_Payload.h",
+			"MU",
+			"JMMG3QJ4SJ/moc_Bash_196_Payload.cpp",
+			null
+		],
+		[
+			"/home/kali/Documents/revshells/src/payloads/implementations/Bash_5_Payload.h",
+			"MU",
+			"JMMG3QJ4SJ/moc_Bash_5_Payload.cpp",
+			null
+		],
+		[
+			"/home/kali/Documents/revshells/src/payloads/implementations/Bash_I_Payload.h",
+			"MU",
+			"JMMG3QJ4SJ/moc_Bash_I_Payload.cpp",
+			null
+		],
+		[
+			"/home/kali/Documents/revshells/src/payloads/implementations/Bash_RL_Payload.h",
+			"MU",
+			"JMMG3QJ4SJ/moc_Bash_RL_Payload.cpp",
+			null
+		],
+		[
+			"/home/kali/Documents/revshells/src/payloads/implementations/Bash_UDP_Payload.h",
+			"MU",
+			"JMMG3QJ4SJ/moc_Bash_UDP_Payload.cpp",
+			null
+		],
+		[
+			"/home/kali/Documents/revshells/src/payloads/implementations/Busybox_Nc_Payload.h",
+			"MU",
+			"JMMG3QJ4SJ/moc_Busybox_Nc_Payload.cpp",
+			null
+		],
+		[
+			"/home/kali/Documents/revshells/src/payloads/implementations/C_Payload.h",
+			"MU",
+			"JMMG3QJ4SJ/moc_C_Payload.cpp",
+			null
+		],
+		[
+			"/home/kali/Documents/revshells/src/payloads/implementations/C_Sharp_Bash_I_Payload.h",
+			"MU",
+			"JMMG3QJ4SJ/moc_C_Sharp_Bash_I_Payload.cpp",
+			null
+		],
+		[
+			"/home/kali/Documents/revshells/src/payloads/implementations/C_Sharp_TCP_Client_Payload.h",
+			"MU",
+			"JMMG3QJ4SJ/moc_C_Sharp_TCP_Client_Payload.cpp",
+			null
+		],
+		[
+			"/home/kali/Documents/revshells/src/payloads/implementations/C_Windows_Payload.h",
+			"MU",
+			"JMMG3QJ4SJ/moc_C_Windows_Payload.cpp",
+			null
+		],
+		[
+			"/home/kali/Documents/revshells/src/payloads/implementations/Curl_Payload.h",
+			"MU",
+			"JMMG3QJ4SJ/moc_Curl_Payload.cpp",
+			null
+		],
+		[
+			"/home/kali/Documents/revshells/src/payloads/implementations/Haskell_Payload.h",
+			"MU",
+			"JMMG3QJ4SJ/moc_Haskell_Payload.cpp",
+			null
+		],
+		[
+			"/home/kali/Documents/revshells/src/payloads/implementations/Nc_C_Payload.h",
+			"MU",
+			"JMMG3QJ4SJ/moc_Nc_C_Payload.cpp",
+			null
+		],
+		[
+			"/home/kali/Documents/revshells/src/payloads/implementations/Nc_E_Payload.h",
+			"MU",
+			"JMMG3QJ4SJ/moc_Nc_E_Payload.cpp",
+			null
+		],
+		[
+			"/home/kali/Documents/revshells/src/payloads/implementations/Nc_Exe_Payload.h",
+			"MU",
+			"JMMG3QJ4SJ/moc_Nc_Exe_Payload.cpp",
+			null
+		],
+		[
+			"/home/kali/Documents/revshells/src/payloads/implementations/Nc_Mkfifo_Payload.h",
+			"MU",
+			"JMMG3QJ4SJ/moc_Nc_Mkfifo_Payload.cpp",
+			null
+		],
+		[
+			"/home/kali/Documents/revshells/src/payloads/implementations/Ncat_E_Payload.h",
+			"MU",
+			"JMMG3QJ4SJ/moc_Ncat_E_Payload.cpp",
+			null
+		],
+		[
+			"/home/kali/Documents/revshells/src/payloads/implementations/Ncat_Exe_E_Payload.h",
+			"MU",
+			"JMMG3QJ4SJ/moc_Ncat_Exe_E_Payload.cpp",
+			null
+		],
+		[
+			"/home/kali/Documents/revshells/src/payloads/implementations/Ncat_UDP_Payload.h",
+			"MU",
+			"JMMG3QJ4SJ/moc_Ncat_UDP_Payload.cpp",
+			null
+		],
+		[
+			"/home/kali/Documents/revshells/src/payloads/implementations/OpenSSL_Payload.h",
+			"MU",
+			"JMMG3QJ4SJ/moc_OpenSSL_Payload.cpp",
+			null
+		],
+		[
+			"/home/kali/Documents/revshells/src/payloads/implementations/PHP_Ivan_Payload.h",
+			"MU",
+			"JMMG3QJ4SJ/moc_PHP_Ivan_Payload.cpp",
+			null
+		],
+		[
+			"/home/kali/Documents/revshells/src/payloads/implementations/PHP_PentestMonkey_Payload.h",
+			"MU",
+			"JMMG3QJ4SJ/moc_PHP_PentestMonkey_Payload.cpp",
+			null
+		],
+		[
+			"/home/kali/Documents/revshells/src/payloads/implementations/Perl_No_Sh_Payload.h",
+			"MU",
+			"JMMG3QJ4SJ/moc_Perl_No_Sh_Payload.cpp",
+			null
+		],
+		[
+			"/home/kali/Documents/revshells/src/payloads/implementations/Perl_Payload.h",
+			"MU",
+			"JMMG3QJ4SJ/moc_Perl_Payload.cpp",
+			null
+		],
+		[
+			"/home/kali/Documents/revshells/src/payloads/implementations/Perl_PentestMonkey_Payload.h",
+			"MU",
+			"JMMG3QJ4SJ/moc_Perl_PentestMonkey_Payload.cpp",
+			null
+		],
+		[
+			"/home/kali/Documents/revshells/src/payloads/implementations/Rustcat_Payload.h",
+			"MU",
+			"JMMG3QJ4SJ/moc_Rustcat_Payload.cpp",
+			null
+		]
+	],
+	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
+	"INCLUDE_DIR" : "/home/kali/Documents/revshells/build/src/payloads/revshells-payloads_autogen/include",
+	"MOC_COMPILATION_FILE" : "/home/kali/Documents/revshells/build/src/payloads/revshells-payloads_autogen/mocs_compilation.cpp",
+	"MOC_DEFINITIONS" : [],
+	"MOC_DEPEND_FILTERS" : 
+	[
+		[
+			"Q_PLUGIN_METADATA",
+			"[\n][ \t]*Q_PLUGIN_METADATA[ \t]*\\([^\\)]*FILE[ \t]*\"([^\"]+)\""
+		]
+	],
+	"MOC_INCLUDES" : 
+	[
+		"/home/kali/Documents/revshells/src/payloads",
+		"/home/kali/Documents/revshells/src/payloads/implementations",
+		"/home/kali/Documents/revshells/src/core",
+		"/usr/include/c++/14",
+		"/usr/include/x86_64-linux-gnu/c++/14",
+		"/usr/include/c++/14/backward",
+		"/usr/lib/gcc/x86_64-linux-gnu/14/include",
+		"/usr/local/include",
+		"/usr/include/x86_64-linux-gnu",
+		"/usr/include"
+	],
+	"MOC_MACRO_NAMES" : 
+	[
+		"Q_OBJECT",
+		"Q_GADGET",
+		"Q_NAMESPACE",
+		"Q_NAMESPACE_EXPORT",
+		"Q_GADGET_EXPORT",
+		"Q_ENUM_NS"
+	],
+	"MOC_OPTIONS" : [],
+	"MOC_PATH_PREFIX" : false,
+	"MOC_PREDEFS_CMD" : 
+	[
+		"/usr/bin/c++",
+		"-std=gnu++17",
+		"-dM",
+		"-E",
+		"-c",
+		"/usr/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp"
+	],
+	"MOC_PREDEFS_FILE" : "/home/kali/Documents/revshells/build/src/payloads/revshells-payloads_autogen/moc_predefs.h",
+	"MOC_RELAXED_MODE" : false,
+	"MOC_SKIP" : [],
+	"MULTI_CONFIG" : false,
+	"PARALLEL" : 16,
+	"PARSE_CACHE_FILE" : "/home/kali/Documents/revshells/build/src/payloads/CMakeFiles/revshells-payloads_autogen.dir/ParseCache.txt",
+	"QT_MOC_EXECUTABLE" : "/usr/lib/qt6/libexec/moc",
+	"QT_UIC_EXECUTABLE" : "/usr/lib/qt6/libexec/uic",
+	"QT_VERSION_MAJOR" : 6,
+	"QT_VERSION_MINOR" : 8,
+	"SETTINGS_FILE" : "/home/kali/Documents/revshells/build/src/payloads/CMakeFiles/revshells-payloads_autogen.dir/AutogenUsed.txt",
+	"SOURCES" : 
+	[
+		[
+			"/home/kali/Documents/revshells/src/payloads/PayloadFactory.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/kali/Documents/revshells/src/payloads/implementations/Bash_196_Payload.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/kali/Documents/revshells/src/payloads/implementations/Bash_5_Payload.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/kali/Documents/revshells/src/payloads/implementations/Bash_I_Payload.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/kali/Documents/revshells/src/payloads/implementations/Bash_RL_Payload.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/kali/Documents/revshells/src/payloads/implementations/Busybox_Nc_Payload.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/kali/Documents/revshells/src/payloads/implementations/C_Payload.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/kali/Documents/revshells/src/payloads/implementations/C_Sharp_Bash_I_Payload.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/kali/Documents/revshells/src/payloads/implementations/C_Sharp_TCP_Client_Payload.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/kali/Documents/revshells/src/payloads/implementations/C_Windows_Payload.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/kali/Documents/revshells/src/payloads/implementations/Curl_Payload.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/kali/Documents/revshells/src/payloads/implementations/Haskell_Payload.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/kali/Documents/revshells/src/payloads/implementations/Nc_C_Payload.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/kali/Documents/revshells/src/payloads/implementations/Nc_E_Payload.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/kali/Documents/revshells/src/payloads/implementations/Nc_Exe_Payload.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/kali/Documents/revshells/src/payloads/implementations/Nc_Mkfifo_Payload.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/kali/Documents/revshells/src/payloads/implementations/Ncat_E_Payload.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/kali/Documents/revshells/src/payloads/implementations/Ncat_Exe_E_Payload.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/kali/Documents/revshells/src/payloads/implementations/Ncat_UDP_Payload.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/kali/Documents/revshells/src/payloads/implementations/OpenSSL_Payload.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/kali/Documents/revshells/src/payloads/implementations/PHP_Ivan_Payload.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/kali/Documents/revshells/src/payloads/implementations/PHP_PentestMonkey_Payload.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/kali/Documents/revshells/src/payloads/implementations/Perl_No_Sh_Payload.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/kali/Documents/revshells/src/payloads/implementations/Perl_Payload.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/kali/Documents/revshells/src/payloads/implementations/Perl_PentestMonkey_Payload.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/kali/Documents/revshells/src/payloads/implementations/Rustcat_Payload.cpp",
+			"MU",
+			null
+		]
+	],
+	"UIC_OPTIONS" : [],
+	"UIC_SEARCH_PATHS" : [],
+	"UIC_SKIP" : [],
+	"UIC_UI_FILES" : [],
+	"USE_BETTER_GRAPH" : true,
+	"VERBOSITY" : 0
+}

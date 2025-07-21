@@ -1,0 +1,2 @@
+set(__QT_DEPLOY_TARGET_revshells_FILE /home/kali/Documents/real_revshells/revshells/build/Desktop_Qt_6_9_1-Debug/revshells)
+set(__QT_DEPLOY_TARGET_revshells_TYPE EXECUTABLE)

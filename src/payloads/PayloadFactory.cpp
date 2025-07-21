@@ -24,6 +24,7 @@
 #include "implementations/Perl_No_Sh_Payload.h"
 #include "implementations/Perl_PentestMonkey_Payload.h"
 #include "implementations/PHP_PentestMonkey_Payload.h"
+#include "implementations/PHP_Ivan_Payload.h"
 #include <sstream>
 #include <iomanip>
 #include <algorithm>
@@ -59,6 +60,7 @@ PayloadFactory::PayloadFactory() {
     registry_["perl_no_sh"] = std::make_unique<PerlNoShPayload>();
     registry_["perl_pentestmonkey"] = std::make_unique<PerlPentestMonkeyPayload>();
     registry_["php_pentestmonkey"] = std::make_unique<PHPPentestMonkeyPayload>();
+    registry_["php_ivan"] = std::make_unique<PHPIvanPayload>();
 }
 
 std::vector<std::string> PayloadFactory::available() const {

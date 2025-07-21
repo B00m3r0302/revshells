@@ -1,0 +1,11 @@
+set(lupdate_project_file "/home/kali/Documents/real_revshells/revshells/CMakeLists.txt")
+set(lupdate_translations "/home/kali/Documents/real_revshells/revshells/revshells_en_US.ts")
+set(lupdate_include_paths "")
+set(lupdate_sources "")
+set(lupdate_subproject_count 1)
+
+set(lupdate_subproject1_source_dir "/home/kali/Documents/real_revshells/revshells")
+set(lupdate_subproject1_include_paths "/home/kali/Documents/real_revshells/revshells/build/Desktop_Qt_6_9_1-Debug/revshells_autogen/include;/home/kali/Qt/6.9.1/gcc_64/include/QtCore;/home/kali/Qt/6.9.1/gcc_64/include;/home/kali/Qt/6.9.1/gcc_64/mkspecs/linux-g++;/home/kali/Qt/6.9.1/gcc_64/include;/home/kali/Qt/6.9.1/gcc_64/include/QtWidgets;/home/kali/Qt/6.9.1/gcc_64/include;/home/kali/Qt/6.9.1/gcc_64/include/QtGui;/home/kali/Qt/6.9.1/gcc_64/include;/usr/include;/usr/include;/usr/include;/usr/include")
+set(lupdate_subproject1_sources "/home/kali/Documents/real_revshells/revshells/build/Desktop_Qt_6_9_1-Debug/revshells_autogen/mocs_compilation.cpp;main.cpp;mainwindow.cpp;mainwindow.h;mainwindow.ui;/home/kali/Documents/real_revshells/revshells/build/Desktop_Qt_6_9_1-Debug/.qt/rcc/revshells_translations.qrc;/home/kali/Documents/real_revshells/revshells/build/Desktop_Qt_6_9_1-Debug/revshells_en_US.qm;/home/kali/Documents/real_revshells/revshells/build/Desktop_Qt_6_9_1-Debug/.qt/rcc/qrc_revshells_translations.cpp;/home/kali/Documents/real_revshells/revshells/build/Desktop_Qt_6_9_1-Debug/revshells_autogen/include/ui_mainwindow.h;/home/kali/Documents/real_revshells/revshells/build/Desktop_Qt_6_9_1-Debug/revshells_autogen/timestamp;/home/kali/Documents/real_revshells/revshells/build/Desktop_Qt_6_9_1-Debug/revshells_en_US.qm.rule;/home/kali/Documents/real_revshells/revshells/build/Desktop_Qt_6_9_1-Debug/.qt/rcc/qrc_revshells_translations.cpp.rule;/home/kali/Documents/real_revshells/revshells/build/Desktop_Qt_6_9_1-Debug/revshells_autogen/timestamp.rule")
+set(lupdate_subproject1_excluded "")
+set(lupdate_subproject1_autogen_dir "/home/kali/Documents/real_revshells/revshells/build/Desktop_Qt_6_9_1-Debug/revshells_autogen")

@@ -37,28 +37,57 @@ RevShells is built using modern C++ design patterns to create a flexible, extens
 
 ```
 src/
-├── app/                    # Application entry point
-│   └── main.cpp           # Main function and CLI handling
+├── app/                    # CLI application entry point
+│   └── main.cpp           # Main function and command-line interface
 ├── core/                  # Core abstractions and configuration
 │   ├── Options.h          # Configuration structures and enums
 │   ├── InterfacePayload.h # Abstract payload interface
 │   └── InterfaceListener.h# Abstract listener interface
-├── payloads/              # Payload generation system
+├── payloads/              # Payload generation system (25 implementations)
 │   ├── PayloadFactory.h   # Factory class declaration
-│   ├── PayloadFactory.cpp # Factory implementation
+│   ├── PayloadFactory.cpp # Factory implementation with encoding
 │   └── implementations/   # Concrete payload implementations
-│       ├── Bash_I_Payload.h
-│       ├── Bash_I_Payload.cpp
-│       └── [Other payload implementations]
-├── listeners/             # Listener management system
-│   ├── ListenerFactory.h  # Factory class with registry
+│       ├── Bash_I_Payload.{h,cpp}    # Interactive Bash shells
+│       ├── Bash_196_Payload.{h,cpp}  # Bash /dev/tcp method
+│       ├── Bash_5_Payload.{h,cpp}    # Bash reverse shell
+│       ├── Bash_RL_Payload.{h,cpp}   # Bash read line method
+│       ├── Bash_UDP_Payload.h        # UDP-based Bash shell
+│       ├── C_Payload.{h,cpp}         # C language reverse shell
+│       ├── C_Sharp_*.{h,cpp}         # C# implementations
+│       ├── C_Windows_Payload.{h,cpp} # Windows C implementation
+│       ├── Curl_Payload.{h,cpp}      # cURL-based reverse shell
+│       ├── Haskell_Payload.{h,cpp}   # Haskell reverse shell
+│       ├── Nc_*_Payload.{h,cpp}      # Multiple netcat variants
+│       ├── Ncat_*_Payload.{h,cpp}    # Multiple Ncat variants
+│       ├── OpenSSL_Payload.{h,cpp}   # SSL encrypted reverse shell
+│       ├── PHP_*_Payload.{h,cpp}     # PHP implementations
+│       ├── Perl_*_Payload.{h,cpp}    # Perl implementations
+│       └── Rustcat_Payload.{h,cpp}   # Rust-based reverse shell
+├── listeners/             # Listener management system (17 implementations)
+│   ├── ListenerFactory.h  # Factory class with registry pattern
 │   └── implementations/   # Concrete listener implementations
-│       ├── Nc_Listener.h
-│       ├── Socat_Listener.h
-│       └── [Other listener implementations]
-└── utils/                 # Utility functions and helpers
-    ├── Encoders.h         # Encoding utilities
-    └── Encoders.cpp       # Encoding implementations
+│       ├── Nc_Listener.h          # Standard netcat listener
+│       ├── NcBusyBox_Listener.h   # BusyBox netcat variant
+│       ├── NcFreeBsd_Listener.h   # FreeBSD netcat variant
+│       ├── Ncat_Listener.h        # Nmap's Ncat listener
+│       ├── NcatExe_Listener.h     # Windows Ncat executable
+│       ├── NcatTLS_Listener.h     # TLS-enabled Ncat
+│       ├── Openssl_Listener.h     # OpenSSL encrypted listener
+│       ├── Powercat_Listener.h    # PowerShell netcat equivalent
+│       ├── Pwncat_Listener.h      # Enhanced netcat alternative
+│       ├── PwncatWindows_Listener.h # Windows pwncat variant
+│       ├── RlwrapNc_Listener.h    # rlwrap-enhanced netcat
+│       ├── Rustcat_Listener.h     # Rust-based listener
+│       ├── Socat_Listener.h       # Socat multipurpose listener
+│       ├── SocatTTY_Listener.h    # TTY-enabled socat listener
+│       ├── WindowsConPty_Listener.h # Windows ConPTY listener
+│       ├── Hoaxshell_Listener.h   # Hoaxshell framework
+│       └── Msfconsole_Listener.h  # Metasploit console listener
+└── ui/                    # Qt6 GUI interface
+    ├── CMakeLists.txt     # Qt-specific build configuration
+    ├── README.md          # GUI-specific documentation
+    ├── mainwindow.{h,cpp,ui} # Main application window
+    └── [Qt UI components]
 ```
 
 ## Design Patterns

@@ -1,0 +1,27 @@
+# Qt Creator project configuration
+# This file helps Qt Creator understand the project structure
+
+[General]
+ProjectName=RevShells
+
+[CMake]
+BuildDirectory=build
+SourceDirectory=.
+
+[Files]
+# Main CMakeLists.txt
+CMakeLists.txt
+
+# Source directories
+src/core/
+src/payloads/
+src/listeners/
+src/app/
+src/ui/
+
+# Translation files
+translations/
+
+[Targets]
+revshells-gui
+revshells-cli

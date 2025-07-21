@@ -1,5 +1,8 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+#include "../payloads/PayloadFactory.h"
+#include "../core/Options.h"
+#include "../listeners/ListenerFactory.h"
 
 #include <QGuiApplication>
 #include <QClipboard>

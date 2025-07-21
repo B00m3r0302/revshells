@@ -224,3 +224,11 @@ std::string PayloadFactory::listener(const std::string& type, const Options& opt
     
     return listener->command(opts);
 }
+
+std::string PayloadFactory::generate(const std::string& type, const Options& opts) const {
+    auto it = registry_.find(type);
+    if (it != registry_.end()) {
+        return it->second->generate(opts);
+    }
+    return "";
+}

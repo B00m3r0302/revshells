@@ -3,7 +3,7 @@
 ## Critical Fixes Needed
 
 ### 1. PayloadFactory Integration
-- [ x ] **Add missing PayloadFactory::generate method** in `/src/payloads/PayloadFactory.cpp`
+- [x] **Add missing PayloadFactory::generate method** in `/src/payloads/PayloadFactory.cpp`
   ```cpp
   std::string PayloadFactory::generate(const std::string& type, const Options& opts) const {
       auto it = registry_.find(type);
@@ -15,7 +15,7 @@
   ```
 
 ### 2. MainWindow Implementation
-- [ X ] **Add required includes** to `/src/ui/mainwindow.cpp`:
+- [x] **Add required includes** to `/src/ui/mainwindow.cpp`:
   ```cpp
   #include "../payloads/PayloadFactory.h"
   #include "../core/Options.h"

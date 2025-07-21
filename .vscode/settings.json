@@ -1,0 +1,15 @@
+{
+    "cmake.buildDirectory": "${workspaceFolder}/build",
+    "cmake.sourceDirectory": "${workspaceFolder}",
+    "cmake.configureOnOpen": true,
+    "cmake.generator": "Unix Makefiles",
+    "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
+    "C_Cpp.default.intelliSenseMode": "linux-gcc-x64",
+    "files.associations": {
+        "*.ui": "xml",
+        "*.qrc": "xml"
+    },
+    "cmake.environment": {
+        "Qt6_DIR": "/usr/lib/x86_64-linux-gnu/cmake/Qt6"
+    }
+}

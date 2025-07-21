@@ -3,7 +3,7 @@
 ## Critical Fixes Needed
 
 ### 1. PayloadFactory Integration
-- [ X ] **Add missing PayloadFactory::generate method** in `/src/payloads/PayloadFactory.cpp`
+- [ x ] **Add missing PayloadFactory::generate method** in `/src/payloads/PayloadFactory.cpp`
   ```cpp
   std::string PayloadFactory::generate(const std::string& type, const Options& opts) const {
       auto it = registry_.find(type);
